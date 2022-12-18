@@ -24,17 +24,27 @@ struct DragDropImageView: View {
                 Image( nsImage: self.image!)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .frame(minWidth: .zero, maxWidth: .infinity)
+                    .frame(minHeight: .zero, maxHeight: .infinity)
 
-                    .frame(width: 400)
+//                    .frame(width: 400)
 
             } else {
-                Text("Drag and drop image file")
-                    .frame(width: 400)
+                VStack {
+                    Label("", systemImage: "cursorarrow.click.2")
+                        .font(.system(size: 128))
+                        .padding(.bottom)
+                    Text("Drag and drop image file")
+                }
+                    //.frame(width: 400)
+                    .frame(minWidth: .zero, maxWidth: .infinity)
+                    .frame(minHeight: .zero, maxHeight: .infinity)
+
             }
         }
         .frame(minWidth: .zero, maxWidth: .infinity)
-        .frame(minHeight: 350)
-        .background(Color.black.opacity(0.5))
+        .frame(minHeight: .zero, maxHeight: .infinity)
+        .background( self.image != nil ? Color.clear : Color.black.opacity(0.2))
         .cornerRadius(8)
         
         .onDrop(of: ["public.url","public.file-url"], isTargeted: nil) { (items) -> Bool in

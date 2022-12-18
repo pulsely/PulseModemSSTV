@@ -12,6 +12,12 @@ class HistoryViewModel: ObservableObject {
     @Published var data:Data?
     @Published var player: AVAudioPlayer?
     
+    func deleteHistory(viewContext: NSManagedObjectContext, history:SSTVGeneration) {
+        viewContext.delete( history)
+        try? viewContext.save()
+
+    }
+    
     func playAudio() {
         if self.data == nil {
             return

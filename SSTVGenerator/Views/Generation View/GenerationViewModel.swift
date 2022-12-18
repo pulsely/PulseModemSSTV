@@ -59,10 +59,16 @@ class GenerationViewModel: ObservableObject {
         panel.allowsMultipleSelection = false
         panel.canChooseDirectories = false
         if panel.runModal() == .OK {
-            self.filename = panel.url?.lastPathComponent ?? "<none>"
+            // load the drag and drop image component with the image
+            if let img = NSImage(contentsOf: URL(fileURLWithPath: panel.url!.path)) {
+                self.filename = panel.url?.lastPathComponent ?? "<none>"
+                self.full_path = panel.url!.path
+                self.current_status = .fileSelected
 
-            self.full_path = panel.url!.path
-            self.current_status = .fileSelected
+                self.image = img
+            } else {
+                print(">> not valid image")
+            }
         }
     }
     
