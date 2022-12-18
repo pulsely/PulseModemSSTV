@@ -22,7 +22,25 @@ enum CurrentStatus {
 
 class GenerationViewModel: ObservableObject {
     @Published var current_status:CurrentStatus = .selectFile
-    
+    @Published var sstv_type:String = "Robot36"
+
+    @Published var sstv_types:[KVStruct] = [KVStruct(id: "MartinM1", value:"MartinM1"),
+                                            KVStruct(id: "MartinM2", value:"MartinM2"),
+                                            KVStruct(id: "ScottieS1", value:"ScottieS1"),
+                                            KVStruct(id: "ScottieS2", value:"ScottieS2"),
+                                            KVStruct(id: "Robot36", value:"Robot36"),
+                                            KVStruct(id: "PasokonP3", value:"PasokonP3"),
+                                            KVStruct(id: "PasokonP5", value:"PasokonP5"),
+                                            KVStruct(id: "PasokonP7", value:"PasokonP7"),
+                                            KVStruct(id: "PD90", value:"PD90"),
+                                            KVStruct(id: "PD120", value:"PD120"),
+                                            KVStruct(id: "PD160", value:"PD160"),
+                                            KVStruct(id: "PD180", value:"PD180"),
+                                            KVStruct(id: "PD240", value:"PD240"),
+                                            KVStruct(id: "Robot8BW", value:"Robot8BW"),
+                                            KVStruct(id: "Robot24BW", value:"Robot24BW"),
+    ]
+
     @Published var image: NSImage?
 
     @Published var filename = ""
@@ -53,7 +71,7 @@ class GenerationViewModel: ObservableObject {
         
         let temporary_folder:String = FileManager.default.temporaryDirectory.absoluteString
 
-        let wav_path_string = self.sstv?.convert_image( temporary_folder, "Robot36", self.full_path ) ?? ""
+        let wav_path_string = self.sstv?.convert_image( temporary_folder, self.sstv_type, self.full_path ) ?? ""
         
         if wav_path_string.count > 0 {
             self.wav_path = URL(fileURLWithPath: "\(wav_path_string ?? "")")

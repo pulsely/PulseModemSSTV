@@ -18,6 +18,7 @@
 		9FB6559B294E8CAE0076C554 /* DragDropImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6559A294E8CAE0076C554 /* DragDropImageView.swift */; };
 		9FB6559E294E945A0076C554 /* NSImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6559D294E945A0076C554 /* NSImageExtensions.swift */; };
 		9FB655A0294E976F0076C554 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB6559F294E976F0076C554 /* HistoryViewModel.swift */; };
+		9FB655A3294F70240076C554 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB655A2294F70240076C554 /* Model.swift */; };
 		9FD6C7FE294A89D30092559B /* SSTVGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6C7FD294A89D30092559B /* SSTVGeneratorApp.swift */; };
 		9FD6C800294A89D30092559B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6C7FF294A89D30092559B /* Persistence.swift */; };
 		9FD6C803294A89D30092559B /* SSTVGenerator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6C801294A89D30092559B /* SSTVGenerator.xcdatamodeld */; };
@@ -41,6 +42,7 @@
 		9FB6559C294E92AA0076C554 /* v1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = v1.xcdatamodel; sourceTree = "<group>"; };
 		9FB6559D294E945A0076C554 /* NSImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImageExtensions.swift; sourceTree = "<group>"; };
 		9FB6559F294E976F0076C554 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		9FB655A2294F70240076C554 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		9FD6C7FA294A89D30092559B /* SSTVGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSTVGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD6C7FD294A89D30092559B /* SSTVGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSTVGeneratorApp.swift; sourceTree = "<group>"; };
 		9FD6C7FF294A89D30092559B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		9FB655A1294F70140076C554 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9FB655A2294F70240076C554 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9FD6C7F1294A89D30092559B = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +159,7 @@
 				9FB6556E294BA0590076C554 /* src */,
 				9FD6C7FF294A89D30092559B /* Persistence.swift */,
 				9FD6C7FD294A89D30092559B /* SSTVGeneratorApp.swift */,
+				9FB655A1294F70140076C554 /* Models */,
 				9FB65599294E8C940076C554 /* Components */,
 				9FB65584294D31610076C554 /* Views */,
 				9FD6C806294A89D40092559B /* Assets.xcassets */,
@@ -281,6 +292,7 @@
 				9FD6C803294A89D30092559B /* SSTVGenerator.xcdatamodeld in Sources */,
 				9FB6559E294E945A0076C554 /* NSImageExtensions.swift in Sources */,
 				9FB65581294D1F0E0076C554 /* GenerationView.swift in Sources */,
+				9FB655A3294F70240076C554 /* Model.swift in Sources */,
 				9FD6C805294A89D30092559B /* ContentView.swift in Sources */,
 				9FB655A0294E976F0076C554 /* HistoryViewModel.swift in Sources */,
 				9FB65583294D1F1C0076C554 /* GenerationViewModel.swift in Sources */,

@@ -60,6 +60,19 @@ struct GenerationView: View {
                         }
                         
                         if (self.viewModel.current_status == .fileSelected) {
+                            
+                            Picker("",  selection: self.$viewModel.sstv_type) {
+                                ForEach(self.viewModel.sstv_types) { sstytype in
+                                    Text( sstytype.value ).tag( sstytype.id )
+                                }
+                            }//.pickerStyle()
+                                .labelsHidden()
+                                .onChange(of: self.viewModel.sstv_type) { value in
+                                    //self.viewModel.pickerLoggerTypeUpdated()
+                                }
+
+                            
+                            
                             Button(action: {
                                 self.viewModel.startSSTVConversion(viewContext: self.viewContext)
                             } ) {
