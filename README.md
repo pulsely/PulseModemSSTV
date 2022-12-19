@@ -2,7 +2,9 @@
 
 PulseModem SSTV is an macOS app that generates SSTV files in different formats.
 
-It currently works on Apple Silicon Macs running macOS Ventura.
+It is written in SwiftUI and currently works on Apple Silicon Macs running macOS Ventura.
+
+New! You can now [download version 1.0.7](https://github.com/pulsely/PulseModemSSTV/releases/tag/v1.0.7).
 
 ![PulseModem A Screenshot](https://pulsely.github.io/assets/images/PulseModemSSTV/screenshot1.jpg)
 
