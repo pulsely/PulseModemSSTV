@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F5B02E62950D69100B3E01C /* libopenjp2.2.5.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02E42950D67500B3E01C /* libopenjp2.2.5.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		9F5B02EB2950D8C300B3E01C /* libz.1.2.13.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02E92950D7D800B3E01C /* libz.1.2.13.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		9F5B02EE2950D90F00B3E01C /* libtiff.5.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02EC2950D90000B3E01C /* libtiff.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		9F5B02F12950D96400B3E01C /* libxcb.1.1.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02EF2950D96300B3E01C /* libxcb.1.1.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		9F5B02F42950D9EA00B3E01C /* libjpeg.8.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02F22950D9E200B3E01C /* libjpeg.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		9F5B02F92950DB4D00B3E01C /* libXdmcp.6.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02F52950DB0200B3E01C /* libXdmcp.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		9F5B02FA2950DB4F00B3E01C /* libXau.6.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02F62950DB0200B3E01C /* libXau.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9F5B02E62950D69100B3E01C /* libopenjp2.2.5.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02E42950D67500B3E01C /* libopenjp2.2.5.0.dylib */; };
+		9F5B02EB2950D8C300B3E01C /* libz.1.2.13.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02E92950D7D800B3E01C /* libz.1.2.13.dylib */; };
+		9F5B02EE2950D90F00B3E01C /* libtiff.5.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02EC2950D90000B3E01C /* libtiff.5.dylib */; };
+		9F5B02F12950D96400B3E01C /* libxcb.1.1.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02EF2950D96300B3E01C /* libxcb.1.1.0.dylib */; };
+		9F5B02F42950D9EA00B3E01C /* libjpeg.8.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02F22950D9E200B3E01C /* libjpeg.8.dylib */; };
+		9F5B02F92950DB4D00B3E01C /* libXdmcp.6.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02F52950DB0200B3E01C /* libXdmcp.6.dylib */; };
+		9F5B02FA2950DB4F00B3E01C /* libXau.6.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02F62950DB0200B3E01C /* libXau.6.dylib */; };
 		9FB6556F294BA0590076C554 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9FB6556E294BA0590076C554 /* src */; };
 		9FB6557B294BBD870076C554 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9FB6557A294BBD870076C554 /* PythonKit */; settings = {ATTRIBUTES = (Required, ); }; };
 		9FB6557D294CF23F0076C554 /* Python.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB6557C294CF23F0076C554 /* Python.xcframework */; };
@@ -64,6 +64,7 @@
 		9F5B02F22950D9E200B3E01C /* libjpeg.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjpeg.8.dylib; sourceTree = "<group>"; };
 		9F5B02F52950DB0200B3E01C /* libXdmcp.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libXdmcp.6.dylib; sourceTree = "<group>"; };
 		9F5B02F62950DB0200B3E01C /* libXau.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libXau.6.dylib; sourceTree = "<group>"; };
+		9F5B02FB2950E84D00B3E01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9FB6556E294BA0590076C554 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		9FB6557C294CF23F0076C554 /* Python.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Python.xcframework; sourceTree = "<group>"; };
 		9FB65580294D1F0E0076C554 /* GenerationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationView.swift; sourceTree = "<group>"; };
@@ -76,8 +77,7 @@
 		9FB6559D294E945A0076C554 /* NSImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImageExtensions.swift; sourceTree = "<group>"; };
 		9FB6559F294E976F0076C554 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		9FB655A2294F70240076C554 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		9FB655A7294FC2950076C554 /* libopenjp2.2.5.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopenjp2.2.5.0.dylib; path = ../../../../../../opt/homebrew/Cellar/openjpeg/2.5.0/lib/libopenjp2.2.5.0.dylib; sourceTree = "<group>"; };
-		9FD6C7FA294A89D30092559B /* SSTVGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSTVGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD6C7FA294A89D30092559B /* PulseModem SSTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PulseModem SSTV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD6C7FD294A89D30092559B /* SSTVGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSTVGeneratorApp.swift; sourceTree = "<group>"; };
 		9FD6C7FF294A89D30092559B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		9FD6C802294A89D30092559B /* SSTVGenerator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SSTVGenerator.xcdatamodel; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 		9FD6C7FB294A89D30092559B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9FD6C7FA294A89D30092559B /* SSTVGenerator.app */,
+				9FD6C7FA294A89D30092559B /* PulseModem SSTV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +201,7 @@
 		9FD6C7FC294A89D30092559B /* SSTVGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				9F5B02FB2950E84D00B3E01C /* Info.plist */,
 				9FB6557C294CF23F0076C554 /* Python.xcframework */,
 				9FD6CE44294A93AE0092559B /* venv */,
 				9FD6CE42294A90380092559B /* python-stdlib */,
@@ -230,7 +231,6 @@
 		9FD6CE3A294A8B550092559B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9FB655A7294FC2950076C554 /* libopenjp2.2.5.0.dylib */,
 				9FD6CE3B294A8B550092559B /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
@@ -258,7 +258,7 @@
 				9FB6557A294BBD870076C554 /* PythonKit */,
 			);
 			productName = SSTVGenerator;
-			productReference = 9FD6C7FA294A89D30092559B /* SSTVGenerator.app */;
+			productReference = 9FD6C7FA294A89D30092559B /* PulseModem SSTV.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -478,6 +478,7 @@
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SSTVGenerator/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -494,14 +495,13 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SSTVGenerator/Library",
-					/opt/homebrew/Cellar/openjpeg/2.5.0/lib,
 					"$(PROJECT_DIR)/SSTVGenerator/Libraries",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.4;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pulsely.SSTVGenerator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "PulseModem SSTV";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -523,6 +523,7 @@
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SSTVGenerator/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -539,13 +540,12 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SSTVGenerator/Library",
-					/opt/homebrew/Cellar/openjpeg/2.5.0/lib,
 					"$(PROJECT_DIR)/SSTVGenerator/Libraries",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pulsely.SSTVGenerator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "PulseModem SSTV";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
