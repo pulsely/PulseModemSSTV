@@ -25,6 +25,7 @@
 		9F5B02F42950D9EA00B3E01C /* libjpeg.8.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02F22950D9E200B3E01C /* libjpeg.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		9F5B02F92950DB4D00B3E01C /* libXdmcp.6.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02F52950DB0200B3E01C /* libXdmcp.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		9F5B02FA2950DB4F00B3E01C /* libXau.6.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F5B02F62950DB0200B3E01C /* libXau.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9FB506B329661A8A009756BB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB506B229661A8A009756BB /* Extensions.swift */; };
 		9FB6556F294BA0590076C554 /* src in Resources */ = {isa = PBXBuildFile; fileRef = 9FB6556E294BA0590076C554 /* src */; };
 		9FB6557B294BBD870076C554 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9FB6557A294BBD870076C554 /* PythonKit */; settings = {ATTRIBUTES = (Required, ); }; };
 		9FB6557D294CF23F0076C554 /* Python.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB6557C294CF23F0076C554 /* Python.xcframework */; };
@@ -98,6 +99,7 @@
 		9F5B02F62950DB0200B3E01C /* libXau.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libXau.6.dylib; sourceTree = "<group>"; };
 		9F5B02FB2950E84D00B3E01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9F5B02FC2950F5CA00B3E01C /* liblcms2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = liblcms2.2.dylib; sourceTree = "<group>"; };
+		9FB506B229661A8A009756BB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9FB6556E294BA0590076C554 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
 		9FB6557C294CF23F0076C554 /* Python.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Python.xcframework; sourceTree = "<group>"; };
 		9FB65580294D1F0E0076C554 /* GenerationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationView.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				9FB6559A294E8CAE0076C554 /* DragDropImageView.swift */,
 				9FB6559D294E945A0076C554 /* NSImageExtensions.swift */,
+				9FB506B229661A8A009756BB /* Extensions.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				9FB6559B294E8CAE0076C554 /* DragDropImageView.swift in Sources */,
 				9FB65598294E799A0076C554 /* HistoryView.swift in Sources */,
 				9FD6C800294A89D30092559B /* Persistence.swift in Sources */,
+				9FB506B329661A8A009756BB /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

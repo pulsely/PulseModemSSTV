@@ -15,9 +15,8 @@ struct GenerationView: View {
     
     @State private var current_status:CurrentStatus = .selectFile
     
-    var body: some View {
-        VStack(alignment: .leading) {
-            
+    var generation_view : some View {
+        Group {
             HStack {
                 Button(action: self.viewModel.openPanel) {
                     Text("Select a JPEG or PNG file")
@@ -81,6 +80,23 @@ struct GenerationView: View {
                 self.viewModel.current_status = .fileSelected
                 
             }).padding(.top, 5)
+
+        }
+    }
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            if (utsname.isAppleSilicon) {
+                generation_view
+            } else {
+                Text("Sorry, PulseModem SSTV cannot run on Intel platform")
+                    .font(.title2)
+                    .padding(.bottom)
+                
+                Text("Please run PulseModem SSTV on an Apple Silicon computer")
+                    .foregroundColor(.gray)
+            }
+
         }.padding()
             .task {
                 self.viewModel.initializePython()
